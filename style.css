@@ -2,15 +2,26 @@ h1 {
     color: rgb(122, 0, 0);
     font-size: 30px;
     text-align: center;
-    
 }
 h1:hover {
     color: rgb(223, 65, 65);
     font-size: 35px;
 }
-
 p {
+    background-color: rgb(31, 0, 0);
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+img {
+    margin: auto;
+    display: block;
+    block-size: 40%;
+}
+video {
+    margin: auto;
+    display: block;
+}
+body {
     background-color: black;
-    color: aliceblue;
-    text-align: right;
 }
