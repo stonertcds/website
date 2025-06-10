@@ -11,19 +11,16 @@ h1:hover {
 }
 p {
     font-family: "Barrio";
-    color: rgb(227, 130, 130);
+    color: rgb(210, 197, 197);
     text-align: center;
     font-size: 30px;
 }
 p.h { /*h = HEADING*/
-    background-image: linear-gradient(rgb(200, 100, 100), rgb(200, 60, 60));
+    background-image: linear-gradient(rgb(200, 100, 100), rgb(200, 60, 60)); 
     text-align: center;
     font-size: 50px;
     text-shadow: 2px 2px 5px rgb(150, 50, 50);
     font-family: "Jersey 10";
-}
-.h:hover {
-    transform: translate(0, -5px);
 }
 img {
     z-index: 10;
@@ -54,19 +51,25 @@ span {
     display: block;
     block-size: 40%;
 }
-.deratic:hover {
-    height: 40%;
-    opacity: 0.7;
-}
 .border-up {
     position:fixed;
-    top: -220;
+    top: -200;
     margin: auto;
-    display: block;
-    block-size: 53%;
-    object-position: 0px;
-    transition: object-position 1s;
+    display: flex;
+
+    object-position: 0 -140px;
+    transition: object-position 0.7s;
 }
 .border-up:hover {
-    object-position: 0 10px;
+    object-position: 0 -30px;
+}
+.border-down {
+    position:fixed;
+    bottom: -200;
+    margin: auto;
+    display:flex;
+    
+    transform: rotate(180deg);
+    object-position: 0 -140px;
+    transition: object-position 0.7s;
 }
