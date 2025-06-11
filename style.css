@@ -53,17 +53,17 @@ span {
 }
 .border-up {
     position: fixed;
-    top: -150px;
+    top: 0px;
     left: 50%;
     transform: translateX(-50%);
     margin: auto;
     display: flex;
 
     transition: object-position 0.7s;
-    object-position: 0 -170px;
+    object-position: 0 -100px;
 }
 .border-up:hover {
-    object-position: 0 -100px;
+    object-position: 0 -10px;
 }
 .border-down {
     position: fixed;
@@ -78,7 +78,7 @@ span {
 }
 .border-up,
 .border-down {
-    z-index: 9999;
+    z-index: 10;
     width: 100vw;
     height: auto;
     object-fit: cover;
