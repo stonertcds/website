@@ -60,10 +60,10 @@ span {
     display: flex;
 
     transition: object-position 0.7s;
-    object-position: 0 -140px;
+    object-position: 0 -170px;
 }
 .border-up:hover {
-    object-position: 0 -30px;
+    object-position: 0 -100px;
 }
 .border-down {
     position: fixed;
