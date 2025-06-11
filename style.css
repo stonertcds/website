@@ -53,26 +53,33 @@ span {
 }
 .border-up {
     position: fixed;
-    top: -200px;
+    top: -150px;
     left: 50%;
-    transform: translateX(-50%) scale(0.8);
+    transform: translateX(-50%);
     margin: auto;
     display: flex;
 
-    object-position: 0 -140px;
     transition: object-position 0.7s;
+    object-position: 0 -140px;
 }
 .border-up:hover {
     object-position: 0 -30px;
 }
 .border-down {
     position: fixed;
-    bottom: -200px;
+    bottom: -150px;
     left: 50%;
-    transform: translateX(-50%) rotate(180deg) scale(0.8);
+    transform: translateX(-50%) rotate(180deg);
     margin: auto;
     display:flex;
     
-    object-position: 0 -140px;
     transition: object-position 0.7s;
+    object-position: 0 -30px;
+}
+.border-up,
+.border-down {
+    z-index: 9999;
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
 }
