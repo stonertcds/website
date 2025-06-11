@@ -67,7 +67,7 @@ span {
 }
 .border-down {
     position: fixed;
-    bottom: -150px;
+    bottom: -300px;
     left: 50%;
     transform: translateX(-50%) rotate(180deg);
     margin: auto;
