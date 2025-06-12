@@ -62,9 +62,11 @@ span {
     transition: object-position 0.7s;
     object-position: 0 -100px;
 }
-.border-up:hover {
+.border-up:hover, .home:hover {
     object-position: 0 -10px;
 }
+
+
 .border-down {
     position: fixed;
     bottom: -300px;
@@ -82,4 +84,18 @@ span {
     width: 100vw;
     height: auto;
     object-fit: cover;
+}
+
+
+
+.button {
+    position: fixed;
+    top: 0px;
+    left: 13%;
+    margin: auto;
+    display:block;
+    z-index: 12;
+
+    transition: object-position 0.7s;
+    object-position: 0 -70px;
 }
