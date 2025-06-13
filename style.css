@@ -11,7 +11,7 @@ h1:hover {
 }
 p {
     font-family: "Barrio";
-    color: rgb(210, 197, 197);
+    color: rgb(187, 162, 162);
     text-align: center;
     font-size: 30px;
 }
@@ -38,10 +38,10 @@ body {
     z-index: -4;
 }
 span {
-    color: white;
+    color: rgb(241, 219, 219);
 }
 .scary {
-    color: red;
+    color: rgb(241, 0, 0);
     text-shadow: 0 5px rgb(68, 0, 0);
 }
 .deratic {
@@ -50,52 +50,4 @@ span {
     margin: auto;
     display: block;
     block-size: 40%;
-}
-.border-up {
-    position: fixed;
-    top: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: auto;
-    display: flex;
-
-    transition: object-position 0.7s;
-    object-position: 0 -100px;
-}
-.border-up:hover, .home:hover {
-    object-position: 0 -10px;
-}
-
-
-.border-down {
-    position: fixed;
-    bottom: -300px;
-    left: 50%;
-    transform: translateX(-50%) rotate(180deg);
-    margin: auto;
-    display:flex;
-    
-    transition: object-position 0.7s;
-    object-position: 0 -30px;
-}
-.border-up,
-.border-down {
-    z-index: 10;
-    width: 100vw;
-    height: auto;
-    object-fit: cover;
-}
-
-
-
-.button {
-    position: fixed;
-    top: 0px;
-    left: 13%;
-    margin: auto;
-    display:block;
-    z-index: 12;
-
-    transition: object-position 0.7s;
-    object-position: 0 -70px;
 }

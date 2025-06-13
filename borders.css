@@ -1,0 +1,46 @@
+.button {
+    position: fixed;
+    top: 25px;
+    margin: auto;
+    display: flex;
+    z-index: 12;
+    transition: object-position 0.7s;
+    object-position: 0 -70px;
+}
+.border-up {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: auto;
+    display: flex;
+
+    transition: object-position 0.7s;
+    object-position: 0 -100px;
+}
+.home {
+    left: 250px;
+}
+.links {
+    left: 500px;
+}
+.bor_hov:hover .border-up, .bor_hov:hover .button{
+    object-position: 0 0px;
+}
+.border-down {
+    position: fixed;
+    bottom: -300px;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+    margin: auto;
+    display:flex;
+    
+    transition: object-position 0.7s;
+    object-position: 0 -30px;
+}
+.border-up, .border-down {
+    z-index: 10;
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+}
