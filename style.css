@@ -16,11 +16,12 @@ p {
     font-size: 30px;
 }
 p.h { /*h = HEADING*/
-    background-image: linear-gradient(rgb(200, 100, 100), rgb(200, 60, 60)); 
+    background-image: linear-gradient(rgb(156, 13, 13), rgb(223, 41, 41)); 
     text-align: center;
     font-size: 50px;
-    text-shadow: 2px 2px 5px rgb(150, 50, 50);
+    text-shadow: 0px 0px 20px black;
     font-family: "Jersey 10";
+    color: rgb(255, 165, 165);
 }
 img {
     z-index: 10;

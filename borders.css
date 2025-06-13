@@ -6,6 +6,8 @@
     z-index: 12;
     transition: object-position 0.7s;
     object-position: 0 -70px;
+    width: 11vw;
+    transform: translateX(-50%);
 }
 .border-up {
     position: fixed;
@@ -18,12 +20,38 @@
     transition: object-position 0.7s;
     object-position: 0 -100px;
 }
+
+.outline {
+
+    display: none; /* Hide the outline by default */
+
+
+    filter: sepia(1) saturate(10);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 20;
+    pointer-events: none;
+}
+
+
 .home {
-    left: 250px;
+    left: 19vw;
 }
 .links {
-    left: 500px;
+    left: 31vw;
 }
+.prod {
+    right: 20vw;
+}
+.histo {
+    right: 8vw;
+}
+
+
 .bor_hov:hover .border-up, .bor_hov:hover .button{
     object-position: 0 0px;
 }
