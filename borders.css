@@ -1,12 +1,12 @@
 .button {
     position: fixed;
-    top: 30px;
+    top: 10px;
     margin: auto;
     display: flex;
     z-index: 12;
     transition: object-position 1.2s;
     object-position: 0 -70px;
-    width: 11vw;
+    width: 5vw;
     transform: translateX(-50%);
 }
 .border-up {
@@ -38,16 +38,16 @@
 
 
 .home {
-    left: 19vw;
+    left: 20vw;
 }
 .links {
-    left: 31vw;
+    left: 30vw;
 }
 .prod {
-    right: 20vw;
+    right: 25vw;
 }
-.histo {
-    right: 8vw;
+.shop {
+    right: 15vw;
 }
 
 

@@ -7,6 +7,7 @@ p {
     color: rgb(187, 162, 162);
     text-align: center;
     font-size: 30px;
+    line-height: 1.6;
 }
 p.h { /*h = HEADING*/
     background-size: cover;
@@ -74,15 +75,7 @@ body {
     background-image: linear-gradient(black, rgb(255, 0, 0));
     z-index: -4;
 }
-.gb {
-    background-image: linear-gradient(black, rgb(71, 243, 137));
-}
-.gp {
-    background-image: linear-gradient(black, rgb(255, 0, 191));
-}
-.bb {
-    background-image: linear-gradient(black, rgb(0, 0, 255));
-}
+
 span {
     color: rgb(241, 219, 219);
 }
@@ -114,15 +107,7 @@ span {
     transform: translateY(90px) translateX(50px); /* Adjust distance as needed */
   }
 }
-.green {
-    filter: hue-rotate(120deg);
-}
-.pink {
-    filter: hue-rotate(300deg);
-}
-.blue {
-    filter: hue-rotate(240deg);
-}
+
 .tit {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: auto;
@@ -136,12 +121,25 @@ span {
     border-radius: 999px;
     border-top: 10vh;
 }
-.gtit {
-    box-shadow: 0 -40px 30px -10px rgba(0, 255, 21, 0.6);
+
+
+.layers_p {
+    margin: auto;
+    display: block;
+    block-size: 22vw;
+    position: relative;
+    left: -30vw;
+    border: 10px solid #00000041;
+    border-radius: 10px;
 }
-.ptit {
-    box-shadow: 0 -40px 30px -10px rgba(255, 0, 191, 0.6);
-}
-.btit {
-    box-shadow: 0 -40px 30px -10px rgba(38, 0, 255, 0.6);
+.layers_p_container {
+    margin: auto;
+    display: block;
+    width: 22vw;
+    height: 22vw;
+    position: relative;
+    left: -30vw;
+    border: 10px solid #00000041;
+    border-radius: 10px;
+    overflow: hidden; /* This hides the spinning image outside the border */
 }
