@@ -1,6 +1,6 @@
 .button {
     position: fixed;
-    top: 25px;
+    top: 30px;
     margin: auto;
     display: flex;
     z-index: 12;
@@ -22,8 +22,7 @@
 }
 
 .outline {
-
-    display: none; /* Hide the outline by default */
+    display: none;
 
 
     filter: sepia(1) saturate(10);
