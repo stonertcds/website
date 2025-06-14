@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Barrio');
 @import url('https://fonts.googleapis.com/css?family=Jersey+10');
+@import url('https://fonts.googleapis.com/css2?family=Workbench&display=swap');
 h1 {
     color: rgb(122, 0, 0);
     font-size: 30px;
@@ -10,32 +11,58 @@ h1:hover {
     font-size: 35px;
 }
 p {
-    font-family: "Barrio";
+    font-family: 'Workbench', sans-serif;
     color: rgb(187, 162, 162);
     text-align: center;
     font-size: 30px;
 }
 p.h { /*h = HEADING*/
-    background-image: linear-gradient(rgb(156, 13, 13), rgb(223, 41, 41)); 
-    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(44, 0, 0, 0.5);
+    margin: 20px auto;
+    width: 80vw;
+    max-width: 800px;
     font-size: 50px;
     text-shadow: 0px 0px 20px black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
     font-family: "Jersey 10";
-    color: rgb(255, 165, 165);
+    color: rgb(197, 135, 135);
+}
+p.h:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 40px rgba(44, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
 }
 img {
     z-index: 10;
 }
 video {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: auto;
     display: block;
     padding-top: 150px;
     z-index: -2;
     width: 50vw;
     height: 50vh;
-    border-radius: 0px;
-    box-shadow: 0 0 30px rgb(255, 0, 0, 0.5);
+
+    border-radius: 2000px;
+    filter: drop-shadow(100 10 40px red);
+    box-shadow: 0 40px 30px -2px rgba(255, 0, 0, 0.3); /* Only bottom shadow */
+    border-top: 10vh;
 }
+video:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(100 10 40px rgb(255, 0, 0));
+}
+
 body {
     background-image: linear-gradient(black, rgb(255, 0, 0));
     z-index: -4;

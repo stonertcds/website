@@ -4,7 +4,7 @@
     margin: auto;
     display: flex;
     z-index: 12;
-    transition: object-position 0.7s;
+    transition: object-position 1.2s;
     object-position: 0 -70px;
     width: 11vw;
     transform: translateX(-50%);
@@ -17,7 +17,7 @@
     margin: auto;
     display: flex;
 
-    transition: object-position 0.7s;
+    transition: object-position 1s;
     object-position: 0 -100px;
 }
 
@@ -62,9 +62,14 @@
     transform: translateX(-50%) rotate(180deg);
     margin: auto;
     display:flex;
+    pointer-events: none;
+    pointer-events: none;
     
-    transition: object-position 0.7s;
+    transition: object-position 2s;
     object-position: 0 -30px;
+}
+.border-down:hover {
+    object-position: 0 0px;
 }
 .border-up, .border-down {
     z-index: 10;
