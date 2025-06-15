@@ -51,6 +51,14 @@
 }
 
 
+.home:hover, .links:hover, .prod:hover, .shop:hover {
+    top: 15px;
+    
+}
+
+
+
+
 .bor_hov:hover .border-up, .bor_hov:hover .button{
     object-position: 0 0px;
 }

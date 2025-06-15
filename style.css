@@ -55,6 +55,8 @@ p.h.left {
 
 img {
     z-index: 10;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: auto;
 }
 video {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -69,6 +71,7 @@ video {
     border-radius: 999px;
     box-shadow: 0 -40px 30px -10px rgba(255, 0, 0, 0.6);
     border-top: 10vh;
+    background-image: linear-gradient(black, rgba(255, 0, 0, 0.349));
 }
 
 body {
@@ -81,7 +84,7 @@ span {
 }
 .scary {
     color: rgb(241, 0, 0);
-    text-shadow: 0 5px rgb(68, 0, 0);
+    text-shadow: 0px 10px 20px black;
 }
 .bott_int {
     transition: transform 2s ease, opacity 1s ease;
