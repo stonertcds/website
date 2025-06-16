@@ -7,6 +7,8 @@
 .bb {
     background-image: linear-gradient(black, rgb(0, 0, 255));
 }
+
+
 .green {
     filter: hue-rotate(120deg);
 }
@@ -16,12 +18,18 @@
 .blue {
     filter: hue-rotate(240deg);
 }
+
+
 .gtit {
     box-shadow: 0 -40px 30px -10px rgba(0, 255, 21, 0.6);
+    background-image: linear-gradient(black, rgba(0, 255, 21, 0.349));
+    
 }
 .ptit {
     box-shadow: 0 -40px 30px -10px rgba(255, 0, 191, 0.6);
+    background-image: linear-gradient(black, rgba(255, 0, 191, 0.349));
 }
 .btit {
     box-shadow: 0 -40px 30px -10px rgba(38, 0, 255, 0.6);
+    background-image: linear-gradient(black, rgba(38, 0, 255, 0.349));
 }
