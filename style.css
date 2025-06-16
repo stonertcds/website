@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Jersey+10');
 @import url('https://fonts.googleapis.com/css2?family=Workbench&display=swap');
 
+a {
+    text-decoration-color: red;
+}
 p {
     font-family: 'Workbench', sans-serif;
     color: rgb(187, 162, 162);
