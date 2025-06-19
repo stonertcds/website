@@ -108,10 +108,10 @@ span {
     transform: translateY(100px) translateX(0);
   }
   50% {
-    transform: translateY(80px) translateX(-50px); /* Adjust distance as needed */
+    transform: translateY(80px) translateX(-50px);
   }
   100% {
-    transform: translateY(90px) translateX(50px); /* Adjust distance as needed */
+    transform: translateY(90px) translateX(50px);
   }
 }
 
@@ -127,7 +127,16 @@ span {
     border-radius: 999px;
     border-top: 10vh;
 }
-
+.ltit {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: auto;
+    display: block;
+    padding-top: 140px;
+    padding-bottom: 0;
+    z-index: -2;
+    width: 100vh;
+    border-top: 10vh;
+}
 
 .layers_p {
     margin: auto;
@@ -148,4 +157,8 @@ span {
     border: 10px solid #00000041;
     border-radius: 10px;
     overflow: hidden; /* This hides the spinning image outside the border */
+}
+
+.chapters {
+    background-color: rgba(0, 0, 0, 0.5);
 }
