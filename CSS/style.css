@@ -12,6 +12,9 @@ p {
     font-size: 30px;
     line-height: 1.6;
 }
+.qa {
+    line-height: 2;
+}
 p.h { /*h = HEADING*/
     background-size: cover;
     background-position: center;
@@ -55,8 +58,6 @@ p.h.left {
     transform: translateX(-400px);
     transition: transform 0.4s ease;
 }
-
-
 img {
     z-index: 10;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -71,19 +72,15 @@ video {
     z-index: -2;
     width: 60vw;
     height: 60vh;
-
     border-radius: 999px;
     box-shadow: 0 -40px 30px -10px rgba(255, 0, 0, 0.6);
     border-top: 10vh;
-    
     background-image: linear-gradient(black, rgba(255, 0, 0, 0.349));
 }
-
 body {
     background-image: linear-gradient(black, rgb(255, 0, 0));
     z-index: -4;
 }
-
 span {
     color: rgb(241, 219, 219);
 }
@@ -117,7 +114,6 @@ span {
     transform: translateY(90px) translateX(50px);
   }
 }
-
 .tit {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: auto;
@@ -130,66 +126,21 @@ span {
     border-radius: 999px;
     border-top: 10vh;
 }
-.ltit {
-    transition: 
-        transform 0.3s ease, 
-        box-shadow 0.3s ease, 
-        filter 0.5s ease;
-    margin: auto;
-    display: block;
-    padding-top: 140px;
-    padding-bottom: 0;
-    z-index: -2;
-    width: 100vh;
-    border-top: 10vh;
-    
-
-}
-.layers_h {
-    filter: grayscale(90%) blur(2px);
-    transition: all 0.5s ease-in-out;
-}
-.layers_h:hover {
-    filter: grayscale(0%);
+.social-icons {
+    display: flex;
+    gap: 1.5vw;
+    justify-content: center;
+    align-items: center;
 }
 
-.layers_p {
-    margin: auto;
-    display: block;
-    block-size: 22vw;
-    position: relative;
-    left: -30vw;
-    border: 10px solid #00000041;
-    border-radius: 10px;
+.social-icon {
+    rotate: 0;
+    width: 7vh;
+    height: autopx;
+    vertical-align: middle;
+    transition: transform 0.5s;
 }
-.layers_p_container {
-    margin: auto;
-    display: block;
-    width: 22vw;
-    height: 22vw;
-    position: relative;
-    left: -30vw;
-    border: 10px solid #00000041;
-    border-radius: 10px;
-    overflow: hidden; /* This hides the spinning image outside the border */
-}
-
-.l_list {
-    background-color: rgba(0, 0, 0, 0.5);
-    text-align: left;
-    padding-left: 30%;
-}
-.lh {
-    text-align: left;
-    margin-left: 400px;
-    font-size: 50px;
-    color: rgb(255, 0, 0);
-    text-shadow: 0px 10px 20px black;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 0px;
+.social-icon:hover {
+    transform: scale(1.15);
+    transform: rotate(10deg);
 }
