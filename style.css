@@ -56,6 +56,7 @@ p.h.left {
     transition: transform 0.4s ease;
 }
 
+
 img {
     z-index: 10;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -91,17 +92,19 @@ span {
     text-shadow: 0px 10px 20px black;
 }
 .bott_int {
-    transition: transform 2s ease, opacity 1s ease;
+    transition: transform 2s ease, opacity 1s ease filter 1s ease;
     opacity: 0.5;
     margin: auto;
     display: block;
     block-size: 40%;
-    position: relative
+    position: relative;
+    filter: blur(0px);
 }
 .bott_int:hover {
     transform: translateY(70px);
     animation: drift-left-right 0.3s infinite alternate ease-in-out;
-    opacity: 0.05;                  
+    opacity: 0.05;         
+    filter: blur(5px);       
 }
 @keyframes drift-left-right {
   0% {
@@ -128,7 +131,10 @@ span {
     border-top: 10vh;
 }
 .ltit {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: 
+        transform 0.3s ease, 
+        box-shadow 0.3s ease, 
+        filter 0.5s ease;
     margin: auto;
     display: block;
     padding-top: 140px;
@@ -136,6 +142,15 @@ span {
     z-index: -2;
     width: 100vh;
     border-top: 10vh;
+    
+
+}
+.layers_h {
+    filter: grayscale(90%) blur(2px);
+    transition: all 0.5s ease-in-out;
+}
+.layers_h:hover {
+    filter: grayscale(0%);
 }
 
 .layers_p {
@@ -159,6 +174,22 @@ span {
     overflow: hidden; /* This hides the spinning image outside the border */
 }
 
-.chapters {
+.l_list {
     background-color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    padding-left: 30%;
+}
+.lh {
+    text-align: left;
+    margin-left: 400px;
+    font-size: 50px;
+    color: rgb(255, 0, 0);
+    text-shadow: 0px 10px 20px black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0px;
 }

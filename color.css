@@ -43,3 +43,11 @@
     box-shadow: 0 -40px 30px -10px rgba(38, 0, 255, 0.6);
     background-image: linear-gradient(black, rgba(38, 0, 255, 0.349));
 }
+
+.layers {
+    filter: grayscale(100%);
+}
+.l_body {
+    background-image: linear-gradient(black, rgb(10, 10, 10));
+    z-index: -4;
+}
