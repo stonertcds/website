@@ -1,4 +1,4 @@
-.ltit {
+.htit {
     transition: 
         transform 0.3s ease, 
         box-shadow 0.3s ease, 
@@ -11,24 +11,15 @@
     width: 100vh;
     border-top: 10vh;
 }
-.layers_h {
+.htlaq_h {
     filter: grayscale(90%) blur(2px);
     transition: all 0.5s ease-in-out;
 }
-.layers_h:hover {
+.htlaq_h:hover {
     filter: grayscale(0%);
 }
 
-.layers_p {
-    margin: auto;
-    display: block;
-    block-size: 22vw;
-    position: relative;
-    left: -50vw;
-    border: 10px solid #00000041;
-    border-radius: 10px;
-}
-.layers_p_container {
+.htlaq_p_container {
     margin: auto;
     display: block;
     width: 22vw;
@@ -37,12 +28,12 @@
     left: -50vw;
     border: 20px solid #00000041;
     border-radius: 20px;
-    overflow: hidden; /* This hides the spinning image outside the border */
-    background: url('layers/wp_back.png') center/cover no-repeat; /* Set wp_back as background */
-    box-shadow: 0 0 100px rgba(255, 0, 0, 0.6);
+    overflow: hidden;
+    background: url('../htlaq/wp_back.png') center/cover no-repeat;
+    box-shadow: 0 0 100px rgba(0, 0, 255, 0.6);
     align-items: center;
 }
-.layers_p_back {
+.htlaq_p_back {
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
@@ -50,7 +41,7 @@
     z-index: 1;
     pointer-events: none; 
 }
-.layers_p_front {
+.htlaq_p_front {
     position: absolute;
     top: 0; left: 0;
     width: 100%;
@@ -64,17 +55,17 @@
     0% { transform: rotate(0deg);}
     100% { transform: rotate(360deg);}
 }
-.l_list {
+.h_list {
     background-color: rgba(0, 0, 0, 0.5);
     text-align: left;
     padding-left: 30vw;
     font-size: 1.5vw;
 }
-.lh {
+.hh {
     text-align: left;
     margin-left: 20vw;
     font-size: 50px;
-    color: rgb(255, 0, 0);
+    color: rgb(0, 0, 255);
     text-shadow: 0px 10px 20px black;
     background-size: cover;
     background-position: center;
@@ -85,7 +76,7 @@
     padding: 0px;
 }
 
-.layers_group {
+.htlaq_group {
     position: relative;
     width: 22vw;
     left: -20vw;
@@ -95,17 +86,17 @@
     align-items: center;
 }
 
-.layers_group .layers_p_container {
+.htlaq_group .htlaq_p_container {
     width: 22vw;
     height: 28vw;
     left: 0;
     margin-bottom: 0;
 }
 
-.ltit.under {
+.htit.under {
     width: 22vw;
     left: 0;
-    margin-top: -1vw; /* Adjust overlap as needed */
+    margin-top: -1vw;
     position: relative;
     display: block;
     padding-top: 0;
