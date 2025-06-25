@@ -21,13 +21,13 @@
 
 
 .green {
-    filter: hue-rotate(120deg);
+    filter: hue-rotate(120deg) brightness(1.5);
 }
 .pink {
-    filter: hue-rotate(300deg);
+    filter: hue-rotate(300deg) brightness(1.5);
 }
 .blue {
-    filter: hue-rotate(240deg);
+    filter: hue-rotate(240deg) brightness(1.5);
 }
 
 

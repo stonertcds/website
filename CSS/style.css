@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Barrio');
 @import url('https://fonts.googleapis.com/css?family=Jersey+10');
 @import url('https://fonts.googleapis.com/css2?family=Workbench&display=swap');
 
@@ -11,6 +10,7 @@ p {
     text-align: center;
     font-size: 30px;
     line-height: 1.6;
+    letter-spacing: 0.8px;
 }
 .qa {
     line-height: 2;
@@ -86,7 +86,7 @@ span {
 }
 .scary {
     color: rgb(241, 0, 0);
-    text-shadow: 0px 10px 20px black;
+    text-shadow: 0px 5px 15px black;
 }
 .bott_int {
     transition: transform 2s ease, opacity 1s ease filter 1s ease;
@@ -128,19 +128,29 @@ span {
 }
 .social-icons {
     display: flex;
-    gap: 1.5vw;
+    gap: 4vw;
     justify-content: center;
     align-items: center;
 }
 
 .social-icon {
     rotate: 0;
-    width: 7vh;
+    width: 14vh;
     height: autopx;
     vertical-align: middle;
     transition: transform 0.5s;
 }
 .social-icon:hover {
-    transform: scale(1.15);
-    transform: rotate(10deg);
+    transform: rotate(5deg);
+    filter:contrast(110%) brightness(110%);
+}
+.answers {
+    opacity: 5%;
+    transition: all 0.5s;
+}
+.answers:hover {
+    opacity: 100%;
+}
+.space {
+    letter-spacing: 0.5vw;
 }
