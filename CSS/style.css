@@ -100,7 +100,7 @@ span {
 .bott_int:hover {
     transform: translateY(70px);
     animation: drift-left-right 0.3s infinite alternate ease-in-out;
-    opacity: 0.05;         
+    opacity: 0.1;         
     filter: blur(5px);       
 }
 @keyframes drift-left-right {

@@ -37,7 +37,7 @@
     left: -50vw;
     border: 20px solid #00000041;
     border-radius: 20px;
-    overflow: hidden; /* This hides the spinning image outside the border */
+    overflow: hidden;
     background: url('layers/wp_back.png') center/cover no-repeat; /* Set wp_back as background */
     box-shadow: 0 0 100px rgba(255, 0, 0, 0.6);
     align-items: center;
@@ -49,6 +49,7 @@
     object-fit: cover;
     z-index: 1;
     pointer-events: none; 
+
 }
 .layers_p_front {
     position: absolute;
@@ -88,7 +89,6 @@
 .layers_group {
     position: relative;
     width: 22vw;
-    left: -20vw;
     margin: auto;
     display: flex;
     flex-direction: column;
