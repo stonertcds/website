@@ -17,9 +17,8 @@
     z-index: -2;
 }
 .layers_h:hover {
-    filter: grayscale(0%);
+    filter: grayscale(0%) blur(0px);
 }
-
 .layers_p {
     margin: auto;
     display: block;
@@ -127,4 +126,9 @@
     height: auto;
     z-index: 1;
     pointer-events: none; 
+}
+.logo {
+    top: 0; left: 0;
+    width: 50vh; height: auto;
+    pointer-events: auto;
 }
