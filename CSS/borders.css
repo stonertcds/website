@@ -1,9 +1,10 @@
 .button {
     position: fixed;
-    top: 10px;
+    top: 0px;
     margin: auto;
     display: flex;
     z-index: 12;
+    transition: all 1s;
     transition: object-position 1.2s;
     object-position: 0 -70px;
     width: 5vw;
@@ -16,7 +17,6 @@
     transform: translateX(-50%);
     margin: auto;
     display: flex;
-
     transition: object-position 1s;
     object-position: 0 -100px;
 }
@@ -38,21 +38,20 @@
 
 
 .home {
-    left: 20vw;
+    left: 50%;
 }
 .links {
     left: 30vw;
 }
 .prod {
-    right: 25vw;
+    left: 20vw;
 }
 .shop {
     right: 15vw;
 }
-
-
 .home:hover, .links:hover, .prod:hover, .shop:hover {
     top: 15px;
+    transition: all 0.5s;
     
 }
 

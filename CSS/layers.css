@@ -38,7 +38,7 @@
     border: 20px solid #00000041;
     border-radius: 20px;
     overflow: hidden;
-    background: url('layers/wp_back.png') center/cover no-repeat; /* Set wp_back as background */
+    background: url('layers/wp_back.png') center/cover no-repeat; /* wp_back is background */
     box-shadow: 0 0 100px rgba(255, 0, 0, 0.6);
     align-items: center;
 }
