@@ -26,16 +26,13 @@ p.h { /*h = HEADING*/
     padding: 0px;
     border-radius: 200px;
     box-shadow: 0 10px 20px rgba(44, 0, 0, 0.5);
-
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     margin-top: 50px;
     position: relative;
     z-index: 1;
     display: block;
-    
     border: 4px solid rgba(255, 0, 0, 0.4);
-
     margin: 20px auto;
     width: 80vw;
     max-width: 800px;
@@ -44,6 +41,18 @@ p.h { /*h = HEADING*/
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
     font-family: "Jersey 10";
+    animation: small_auto_drift 10s infinite alternate ease-in-out;
+}
+@keyframes small_auto_drift {
+    0% {
+        transform: translateX(3%);
+    }    
+    50% {
+        transform: translateX(-3%)
+    }
+    100% {
+        transform: translateX(3%);
+    }
 }
 p.h:hover {
     box-shadow: 0 4vh 40px rgba(44, 0, 0, 0.8);
@@ -113,6 +122,29 @@ span {
     transform: translateY(90px) translateX(50px);
   }
 }
+
+.bott_auto {
+    transition: transform 2s ease, opacity 1s ease filter 1s ease;
+    opacity: 0.5;
+    margin: auto;
+    display: block;
+    block-size: 40%;
+    position: relative;
+    filter: blur(0px);
+    animation: auto_drift 5s infinite alternate ease-in-out;
+}
+@keyframes auto_drift {
+    0% {
+        transform: translateX(70%);
+    }    
+    50% {
+        transform: translateX(-70%)
+    }
+    100% {
+        transform: translateX(70%);
+    }
+}
+
 .tit {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: auto;
@@ -146,10 +178,12 @@ span {
 .answers {
     opacity: 50%;
     transition: all 0.5s;
+    padding: 0;
     
 }
 .answers:hover {
     opacity: 100%;
+    padding: 1vw;
 }
 .space {
     letter-spacing: 0.5vw;
