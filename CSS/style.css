@@ -41,7 +41,7 @@ p.h { /*h = HEADING*/
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
     font-family: "Jersey 10";
-    animation: small_auto_drift 10s infinite alternate ease-in-out;
+    /*animation: small_auto_drift 10s infinite alternate ease-in-out;*/
 }
 @keyframes small_auto_drift {
     0% {
@@ -55,7 +55,7 @@ p.h { /*h = HEADING*/
     }
 }
 p.h:hover {
-    box-shadow: 0 4vh 40px rgba(44, 0, 0, 0.8);
+    box-shadow: 0 10px 40px rgba(44, 0, 0, 0.5);
     color: rgb(196, 196, 196);
 }
 .left {
@@ -175,6 +175,10 @@ span {
     transform: rotate(5deg);
     filter:contrast(110%) brightness(110%);
 }
+.si-left:hover {
+    transform: rotate(-5deg);
+}
+
 .answers {
     opacity: 50%;
     transition: all 0.5s;
@@ -186,7 +190,7 @@ span {
     padding: 1vw;
 }
 .space {
-    letter-spacing: 0.5vw;
+    letter-spacing: 3px;
 }
 .topheading {
     padding: 50px;

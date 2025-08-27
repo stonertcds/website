@@ -8,6 +8,8 @@
     transition: object-position 1.2s;
     object-position: 0 -70px;
     width: 5vw;
+    height: auto; /* OK THIS MIGHT BREAK SOMETHING OR FIX SOMETHING IDK BUT IM PRAYING RN */
+    /* EDIT: ok it did literally nothing so now im scared that the whole thing is going to break any time now ;3 */
     transform: translateX(-50%);
 }
 .border-up {
@@ -35,8 +37,6 @@
     z-index: 20;
     pointer-events: none;
 }
-
-
 .home {
     left: 20vw;
 }
@@ -52,8 +52,13 @@
 
 .home:hover, .links:hover, .prod:hover, .shop:hover {
     top: 15px;
-    transition: all 0.5s;
+    transition: all 0.3s;
     
+}
+.home:not(:hover), .links:not(:hover), 
+.prod:not(:hover), .shop:not(:hover) {
+    top: 0px;
+    transition: all 0.7s;
 }
 
 

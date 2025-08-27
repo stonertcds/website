@@ -38,7 +38,7 @@
     border: 20px solid #00000041;
     border-radius: 20px;
     overflow: hidden;
-    background: url('layers/wp_back.png') center/cover no-repeat; /* wp_back is background */
+    background: url('layers/wp_back.png') center/cover no-repeat; /* wp_back is background lmao */
     box-shadow: 0 0 100px rgba(255, 0, 0, 0.6);
     align-items: center;
 }
@@ -52,11 +52,11 @@
 }
 .layers_p_container:hover .layers_p_back {
     filter: hue-rotate(180deg);
-    transition: filter 1s ease-in-out;
+    transition: filter 1s ease-out;
 }
 .layers_p_container:not(:hover) .layers_p_back {
     filter: hue-rotate(0deg);
-    transition: filter 0.2s ease-in-out;
+    transition: filter 0.7s ease-out;
 }
 .layers_p_front {
     position: absolute;
