@@ -1,0 +1,29 @@
+.bannercontent {
+    font-family: "Jersey 10";
+    font-size: 3vw; 
+    color: rgb(255, 255, 255);
+}
+div.banner {
+    background-image: radial-gradient(#b4dddd, #f67777);
+    padding-bottom: 2vh;
+    box-shadow: #f67777 0px 0px 20px;
+    box-shadow: #23263636 0px 0px 100px inset;
+    border-radius: 300px 40%;
+}
+img.rw {
+    transform: scale(0.65) rotate(0);
+    transition: all 0.3s ease;
+}
+img.rw:hover {
+    transform: scale(0.7) rotate(2deg);
+}
+p.banner {
+    color: #232636;
+    text-shadow: 0px 0px 20px #b4dddd;
+}
+p.rwp { /*  RWP = RAREAWHERE PARAGRAPH */
+    font-family: 'Workbench', sans-serif;
+    font-size: 1.8vw;
+    text-align: left;
+    padding-left: 20%;
+}

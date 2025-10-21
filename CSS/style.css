@@ -43,6 +43,9 @@ p.h { /*h = HEADING*/
     font-family: "Jersey 10";
     /*animation: small_auto_drift 10s infinite alternate ease-in-out;*/
 }
+
+
+    /* THIS ISNT EVEN USED LOLLLL */
 @keyframes small_auto_drift {
     0% {
         transform: translateX(3%);
