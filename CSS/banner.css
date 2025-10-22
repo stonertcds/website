@@ -4,26 +4,94 @@
     color: rgb(255, 255, 255);
 }
 div.banner {
-    background-image: radial-gradient(#b4dddd, #f67777);
-    padding-bottom: 2vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2vw;
+    background-image: radial-gradient(#fabf89, #f67777);
+    padding: 2vh 3vw 2vh 3vw;
     box-shadow: #f67777 0px 0px 20px;
     box-shadow: #23263636 0px 0px 100px inset;
     border-radius: 300px 40%;
+    box-shadow: #f9cfa8 0px 0px 30px, #23263666 0px 0px 150px inset;
 }
-img.rw {
-    transform: scale(0.65) rotate(0);
-    transition: all 0.3s ease;
-}
-img.rw:hover {
-    transform: scale(0.7) rotate(2deg);
-}
-p.banner {
-    color: #232636;
-    text-shadow: 0px 0px 20px #b4dddd;
+.banner-text {
+    flex: 1 1 60%;
 }
 p.rwp { /*  RWP = RAREAWHERE PARAGRAPH */
     font-family: 'Workbench', sans-serif;
-    font-size: 1.8vw;
+    font-size: 1.6vw;
     text-align: left;
+    color: #f67777;
+    text-shadow: #232636 0px 0px 10px;
+    padding-left: 0;
+    padding-bottom: 7vh;
+}
+span.rwq {
+    font-weight: bold;
+    color: #8ce0e0;
+    text-shadow: #f67777 0px 0px 30px;
+    font-size: 2.2vw;
+    padding-left: 0;
+}
+img.rw {
+    flex: 0 0 auto;
+    max-width: 35%;
+    height: auto;
+    transform: scale(0.8) rotate(0);
+    transition: all 0.3s ease;
+}
+img.rw:hover {
+    transform: scale(0.9) rotate(2deg);
+}
+p.banner {
+    color: #8ce0e0;
+    text-shadow: #518282 0px 0px 10px;
+}
+span.rw { /* RAREAWHERE BOLD */
+    font-weight: bold;
+    color: #f67777;
+    text-shadow: #eccfcf 0px 0px 30px;
+    padding-bottom: 0;
+    text-decoration: underline;
+}
+p.rwp { /*  RWP = RAREAWHERE PARAGRAPH */
+    font-family: 'Workbench', sans-serif;
+    font-size: 1.6vw;
+    text-align: left;
+    color: #8ce0e0;
+    text-shadow: #518282 0px 0px 10px;
+    padding-left: 4vw;
+    padding-bottom: 7vh;
+    padding-top: 0;
+}
+span.rwq { /* RAREAWHERE QUESTION */
+    font-weight: bold;
+    color: #f67777;
+    text-shadow: #eccfcf 0px 0px 30px;
+    font-size: 2.2vw;
     padding-left: 20%;
 }
+img.mini-rw {
+    display: inline-block;
+    vertical-align: middle;
+    width: 4vw;      /* adjust size to taste (or use px) */
+    max-width: 80px; /* optional cap for very large screens */
+    height: auto;
+    margin-left: 0.6vw;
+}
+@media (max-width: 700px) {
+    img.mini-rw { width: 28px; margin-left: 6px; }
+}
+
+/*
+COLOR PALETTE:
+blue: #b4dddd
+    cus blue: #8ce0e0
+red: #f67777
+dark: #232636
+orange: #fabf89
+light orange: #f9cfa8
+white: #dccdcd
+
+*/
