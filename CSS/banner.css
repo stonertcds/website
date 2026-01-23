@@ -50,8 +50,8 @@ p.banner {
 }
 span.rw { /* RAREAWHERE BOLD */
     font-weight: bold;
-    color: #f67777;
-    text-shadow: #eccfcf 0px 0px 30px;
+    color: #ff3e3e;
+    text-shadow: #ffffff52 0px 0px 30px;
     padding-bottom: 0;
     text-decoration: underline;
 }
@@ -59,7 +59,7 @@ p.rwp { /*  RWP = RAREAWHERE PARAGRAPH */
     font-family: 'Workbench', sans-serif;
     font-size: 1.6vw;
     text-align: left;
-    color: #8ce0e0;
+    color: #ffffff;
     text-shadow: #518282 0px 0px 10px;
     padding-left: 4vw;
     padding-bottom: 7vh;
@@ -67,8 +67,8 @@ p.rwp { /*  RWP = RAREAWHERE PARAGRAPH */
 }
 span.rwq { /* RAREAWHERE QUESTION */
     font-weight: bold;
-    color: #f67777;
-    text-shadow: #eccfcf 0px 0px 30px;
+    color: #ff3f3f;
+    text-shadow: #ffffff52 0px 0px 30px;
     font-size: 2.2vw;
     padding-left: 20%;
 }

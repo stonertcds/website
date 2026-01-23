@@ -10,7 +10,7 @@ p {
     text-align: center;
     font-size: 30px;
     line-height: 1.7;
-    text-shadow: rgba(0, 0, 0, 0.455) 0px 0px 50px;
+    text-shadow: rgba(0, 0, 0, 0.776) 0px 0px 50px;
     letter-spacing: 0.8px;
 }
 .qa {
@@ -76,10 +76,10 @@ img {
 }
 video {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: auto;
+    margin: 3vh auto;
     display: block;
     padding-top: 150px;
-    padding-bottom: 100px;
+    padding-bottom: 90px;
     z-index: -2;
     width: 60vw;
     height: 60vh;
@@ -97,7 +97,7 @@ span {
 }
 .scary {
     color: rgb(241, 0, 0);
-    text-shadow: 0px 5px 15px black;
+    text-shadow: 0px 3px 10px black;
 }
 .bott_int {
     transition: transform 2s ease, opacity 1s ease filter 1s ease;
@@ -124,6 +124,17 @@ span {
   100% {
     transform: translateY(90px) translateX(50px);
   }
+}
+
+.bott_auto_static {
+    transition: transform 2s ease, opacity 1s ease filter 1s ease;
+    opacity: 0.5;
+    margin: auto;
+    display: block;
+    block-size: 40%;
+    position: relative;
+    filter: blur(0px);
+    
 }
 
 .bott_auto {
@@ -193,8 +204,44 @@ span {
     padding: 1vw;
 }
 .space {
-    letter-spacing: 3px;
+    letter-spacing: 4px;
 }
 .topheading {
     padding: 50px;
+}
+audio {
+    margin: auto;
+    display: block;
+    width: 80vw;
+    max-width: 800px;
+    opacity: 0;
+}
+audio:hover {
+    transform: opacity 1s ease;
+    opacity: 1;
+}
+
+@keyframes fadeOutScroll {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.u-can-scroll {
+    font-family: 'Workbench', sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: #518282 0px 0px 10px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+
+    opacity: 1;
+    animation: fadeOutScroll 5s ease forwards;
 }
