@@ -9,13 +9,13 @@
 }
 
 
-.stratum {
+.ch2 {
     color: rgb(81, 255, 0);
 }
-.together {
+.ch3 {
     color: rgb(255, 0, 191);
 }
-.never {
+.ch4 {
     color: orange;
 }
 
@@ -28,6 +28,9 @@
 }
 .blue {
     filter: hue-rotate(240deg) brightness(1.5);
+}
+.rareawhere {
+    filter: saturate(50%) brightness(3) hue-rotate(20deg);
 }
 
 

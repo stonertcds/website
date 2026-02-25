@@ -37,7 +37,18 @@
                 </p>   
             </h1>
 
+
+
+            
             <img src="layers/Kaisei.png" alt="The Subject" class="bott_auto">
+            <script>
+                document.querySelector('img[src="layers/Kaisei.png"]').addEventListener('click', function() {
+                    const audio = new Audio('layers/arent_you_sick.mp3');
+                    audio.play();
+                });
+            </script>
+
+
             <img src="interact/bor_down.webp" alt="bottom" class="border-down blue">
 
         </body>

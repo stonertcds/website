@@ -10,11 +10,14 @@ p {
     text-align: center;
     font-size: 30px;
     line-height: 1.7;
-    text-shadow: rgba(0, 0, 0, 0.776) 0px 0px 50px;
+    text-shadow: rgba(0, 0, 0, 0.384) 0px 0px 50px;
     letter-spacing: 0.8px;
 }
 .qa {
     line-height: 2;
+}
+.center {
+    text-align: center;
 }
 p.h { /*h = HEADING*/
     background-size: cover;
@@ -22,7 +25,7 @@ p.h { /*h = HEADING*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.486);
     padding: 0px;
     border-radius: 200px;
     box-shadow: 0 10px 20px rgba(44, 0, 0, 0.5);
@@ -34,8 +37,7 @@ p.h { /*h = HEADING*/
     display: block;
     border: 4px solid rgba(255, 0, 0, 0.4);
     margin: 20px auto;
-    width: 80vw;
-    max-width: 800px;
+    width: 60%;
     font-size: 50px;
     text-shadow: 0px 0px 20px black;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -147,6 +149,12 @@ span {
     filter: blur(0px);
     animation: auto_drift 5s infinite alternate ease-in-out;
 }
+.bott_auto_slow {
+    animation: auto_drift_small 7s infinite alternate ease-in-out;
+}
+.bott_auto_slow_2 {
+    animation: auto_drift_small_offset 7s infinite alternate ease-in-out;
+}
 @keyframes auto_drift {
     0% {
         transform: translateX(70%);
@@ -156,6 +164,17 @@ span {
     }
     100% {
         transform: translateX(70%);
+    }
+}
+@keyframes auto_drift_small {
+    0% {
+        transform: translateX(30%);
+    }    
+    50% {
+        transform: translateX(-30%)
+    }
+    100% {
+        transform: translateX(30%);
     }
 }
 
@@ -234,6 +253,10 @@ audio:hover {
 }
 
 .u-can-scroll {
+    position: absolute;
+    z-index: 9999;
+    left: 50%;
+    transform: translateX(-50%);
     font-family: 'Workbench', sans-serif;
     font-size: 2vw;
     text-align: center;
@@ -243,5 +266,5 @@ audio:hover {
     margin-bottom: 50px;
 
     opacity: 1;
-    animation: fadeOutScroll 5s ease forwards;
+    animation: fadeOutScroll 10s ease forwards;
 }

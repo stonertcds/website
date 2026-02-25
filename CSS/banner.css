@@ -27,6 +27,15 @@ p.rwp { /*  RWP = RAREAWHERE PARAGRAPH */
     padding-left: 0;
     padding-bottom: 7vh;
 }
+p.rwp-orange {
+    font-family: 'Workbench', sans-serif;
+    font-size: 1.6vw;
+    text-align: left;
+    color: #ffffff;
+    text-shadow: #770000 0px 0px 10px;
+    margin: 0 130px;
+    padding-bottom: 7vh;
+}
 span.rwq {
     font-weight: bold;
     color: #8ce0e0;
@@ -41,12 +50,24 @@ img.rw {
     transform: scale(0.8) rotate(0);
     transition: all 0.3s ease;
 }
+img.rw-large {
+    flex: 0 0 auto;
+    transform: scale(0.8) rotate(0);
+    transition: all 0.3s ease;
+}
 img.rw:hover {
     transform: scale(0.9) rotate(2deg);
+}
+img.rw-large:hover {
+    transform: scale(0.9);
 }
 p.banner {
     color: #8ce0e0;
     text-shadow: #518282 0px 0px 10px;
+}
+p.banner-orange {
+    color: #ffffff;
+    text-shadow: #770000 0px 0px 10px;
 }
 span.rw { /* RAREAWHERE BOLD */
     font-weight: bold;
@@ -54,6 +75,13 @@ span.rw { /* RAREAWHERE BOLD */
     text-shadow: #ffffff52 0px 0px 30px;
     padding-bottom: 0;
     text-decoration: underline;
+}
+span.rw-orange { /* RAREAWHERE BOLD */
+    font-weight: bold;
+    color: #ff933a;
+    text-shadow: #ffffff52 0px 0px 30px;
+    padding-bottom: 0;
+    
 }
 p.rwp { /*  RWP = RAREAWHERE PARAGRAPH */
     font-family: 'Workbench', sans-serif;
@@ -72,6 +100,15 @@ span.rwq { /* RAREAWHERE QUESTION */
     font-size: 2.2vw;
     padding-left: 20%;
 }
+span.rwq-orange { /* RAREAWHERE QUESTION */
+    font-weight: bold;
+    color: #ff933a;
+    text-shadow: #ffffff52 0px 0px 30px;
+    font-size: 2.2vw;
+    text-align: center;
+    display: block;
+    padding: 0;
+}
 img.mini-rw {
     display: inline-block;
     vertical-align: middle;
@@ -83,7 +120,12 @@ img.mini-rw {
 @media (max-width: 700px) {
     img.mini-rw { width: 28px; margin-left: 6px; }
 }
-
+.banner-text-page {
+    color: white;
+}
+.red {
+    color: orange;
+}
 /*
 COLOR PALETTE:
 blue: #b4dddd
