@@ -6,12 +6,14 @@ a {
 }
 p {
     font-family: 'Workbench', sans-serif;
-    color: rgb(187, 162, 162);
+    color: rgb(197, 197, 197);
     text-align: center;
     font-size: 30px;
     line-height: 1.7;
     text-shadow: rgba(0, 0, 0, 0.384) 0px 0px 50px;
     letter-spacing: 0.8px;
+    max-width: 80vw;
+    margin: auto;
 }
 .qa {
     line-height: 2;
@@ -25,9 +27,8 @@ p.h { /*h = HEADING*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.486);
+    background-color: rgba(0, 0, 0, 0.747);
     padding: 0px;
-    border-radius: 200px;
     box-shadow: 0 10px 20px rgba(44, 0, 0, 0.5);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -40,28 +41,14 @@ p.h { /*h = HEADING*/
     width: 60%;
     font-size: 50px;
     text-shadow: 0px 0px 20px black;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
     text-align: center;
     font-family: "Jersey 10";
     /*animation: small_auto_drift 10s infinite alternate ease-in-out;*/
 }
-
-
-    /* THIS ISNT EVEN USED LOLLLL */
-@keyframes small_auto_drift {
-    0% {
-        transform: translateX(3%);
-    }    
-    50% {
-        transform: translateX(-3%)
-    }
-    100% {
-        transform: translateX(3%);
-    }
-}
 p.h:hover {
     box-shadow: 0 10px 40px rgba(44, 0, 0, 0.5);
-    color: rgb(196, 196, 196);
+    color: rgb(255, 255, 255);
 }
 .left {
     text-align: left;
@@ -95,7 +82,7 @@ body {
     z-index: -4;
 }
 span {
-    color: rgb(241, 219, 219);
+    color: rgb(255, 255, 255);
 }
 .scary {
     color: rgb(241, 0, 0);
@@ -264,7 +251,10 @@ audio:hover {
     text-shadow: #518282 0px 0px 10px;
     margin-top: -50px;
     margin-bottom: 50px;
-
+    max-width: 100%;
     opacity: 1;
     animation: fadeOutScroll 10s ease forwards;
+}
+.subject {
+    margin-bottom: 70px;
 }

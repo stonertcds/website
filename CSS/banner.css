@@ -16,7 +16,7 @@ div.banner {
     box-shadow: #f9cfa8 0px 0px 30px, #23263666 0px 0px 150px inset;
 }
 .banner-text {
-    flex: 1 1 60%;
+    flex: 1 1 70%;
 }
 p.rwp { /*  RWP = RAREAWHERE PARAGRAPH */
     font-family: 'Workbench', sans-serif;
@@ -24,7 +24,8 @@ p.rwp { /*  RWP = RAREAWHERE PARAGRAPH */
     text-align: left;
     color: #f67777;
     text-shadow: #232636 0px 0px 10px;
-    padding-left: 0;
+    padding-left: 4vw;
+    margin-left: 90px;
     padding-bottom: 7vh;
 }
 p.rwp-orange {
@@ -42,16 +43,16 @@ span.rwq {
     text-shadow: #f67777 0px 0px 30px;
     font-size: 2.2vw;
     padding-left: 0;
+    margin:-100;
 }
 img.rw {
-    flex: 0 0 auto;
-    max-width: 35%;
+    max-width: 100%;
+    margin: 85px auto auto auto;
     height: auto;
     transform: scale(0.8) rotate(0);
     transition: all 0.3s ease;
 }
 img.rw-large {
-    flex: 0 0 auto;
     transform: scale(0.8) rotate(0);
     transition: all 0.3s ease;
 }

@@ -1,5 +1,5 @@
 .gb {
-    background-image: linear-gradient(black, rgb(71, 243, 137));
+    background-image: linear-gradient(black, rgb(71, 243, 171));
 }
 .gp {
     background-image: linear-gradient(black, rgb(255, 0, 191));
@@ -21,7 +21,7 @@
 
 
 .green {
-    filter: hue-rotate(120deg) brightness(1.5);
+    filter: hue-rotate(140deg) brightness(1.7);
 }
 .pink {
     filter: hue-rotate(300deg) brightness(1.5);
