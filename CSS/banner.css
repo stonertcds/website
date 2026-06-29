@@ -1,6 +1,6 @@
 .bannercontent {
     font-family: "Jersey 10";
-    font-size: 3vw; 
+    font-size: 55px; 
     color: rgb(255, 255, 255);
 }
 div.banner {
@@ -9,28 +9,33 @@ div.banner {
     align-items: flex-start;
     gap: 2vw;
     background-image: radial-gradient(#fabf89, #f67777);
-    padding: 2vh 3vw 2vh 3vw;
+    
+    padding-top: 30px;
+    padding-bottom: 70;
+
     box-shadow: #f67777 0px 0px 20px;
     box-shadow: #23263636 0px 0px 100px inset;
-    border-radius: 300px 40%;
+    border-radius: 300px 40%; /*300px 40%*/
     box-shadow: #f9cfa8 0px 0px 30px, #23263666 0px 0px 150px inset;
+    max-width: 2200px;
+    margin: 0 auto;
 }
 .banner-text {
-    flex: 1 1 70%;
+    flex: 10 10 40%;
 }
 p.rwp { /*  RWP = RAREAWHERE PARAGRAPH */
     font-family: 'Workbench', sans-serif;
-    font-size: 1.6vw;
+    font-size: 30px;
     text-align: left;
     color: #f67777;
     text-shadow: #232636 0px 0px 10px;
-    padding-left: 4vw;
+    padding-left: 10px;
     margin-left: 90px;
-    padding-bottom: 7vh;
+    padding-bottom: 100px;
 }
 p.rwp-orange {
     font-family: 'Workbench', sans-serif;
-    font-size: 1.6vw;
+    font-size: 30px;
     text-align: left;
     color: #ffffff;
     text-shadow: #770000 0px 0px 10px;
@@ -41,24 +46,25 @@ span.rwq {
     font-weight: bold;
     color: #8ce0e0;
     text-shadow: #f67777 0px 0px 30px;
-    font-size: 2.2vw;
     padding-left: 0;
     margin:-100;
 }
 img.rw {
-    max-width: 100%;
-    margin: 85px auto auto auto;
-    height: auto;
+    margin: auto;
+    height: 400px;
     transform: scale(0.8) rotate(0);
     transition: all 0.3s ease;
+    margin-top: 150px;  
 }
+img.rw:hover {
+    transform: scale(0.9) rotate(-1deg);
+}
+
 img.rw-large {
     transform: scale(0.8) rotate(0);
     transition: all 0.3s ease;
 }
-img.rw:hover {
-    transform: scale(0.9) rotate(2deg);
-}
+
 img.rw-large:hover {
     transform: scale(0.9);
 }
@@ -86,7 +92,7 @@ span.rw-orange { /* RAREAWHERE BOLD */
 }
 p.rwp { /*  RWP = RAREAWHERE PARAGRAPH */
     font-family: 'Workbench', sans-serif;
-    font-size: 1.6vw;
+    font-size: 32px;
     text-align: left;
     color: #ffffff;
     text-shadow: #518282 0px 0px 10px;
@@ -98,7 +104,7 @@ span.rwq { /* RAREAWHERE QUESTION */
     font-weight: bold;
     color: #ff3f3f;
     text-shadow: #ffffff52 0px 0px 30px;
-    font-size: 2.2vw;
+    font-size: 40px;
     padding-left: 20%;
 }
 span.rwq-orange { /* RAREAWHERE QUESTION */
@@ -113,8 +119,8 @@ span.rwq-orange { /* RAREAWHERE QUESTION */
 img.mini-rw {
     display: inline-block;
     vertical-align: middle;
-    width: 4vw;      /* adjust size to taste (or use px) */
-    max-width: 80px; /* optional cap for very large screens */
+    width: 100px;    
+    max-width: 80px; 
     height: auto;
     margin-left: 0.6vw;
 }

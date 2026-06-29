@@ -1,14 +1,17 @@
 .gb {
-    background-image: linear-gradient(black, rgb(71, 243, 171));
+    background-image: linear-gradient(rgb(56, 88, 39), rgb(71, 243, 171));
 }
 .gp {
-    background-image: linear-gradient(black, rgb(255, 0, 191));
+    background-image: linear-gradient(rgb(27, 0, 24), rgb(255, 0, 200));
 }
 .bb {
-    background-image: linear-gradient(black, rgb(0, 0, 255));
+    background-image:  linear-gradient(rgb(0, 0, 126), rgb(0, 0, 255));
+}
+.yb {
+    background-image: linear-gradient(rgb(74, 75, 35), rgb(255, 230, 0));
 }
 
-
+/* THESE ARE TEMPORARY, NOT FACTUAL */
 .ch2 {
     color: rgb(81, 255, 0);
 }
@@ -24,7 +27,7 @@
     filter: hue-rotate(140deg) brightness(1.7);
 }
 .pink {
-    filter: hue-rotate(300deg) brightness(1.5);
+    filter: hue-rotate(310deg) brightness(1.5);
 }
 .blue {
     filter: hue-rotate(240deg) brightness(1.5);
@@ -32,19 +35,26 @@
 .rareawhere {
     filter: saturate(50%) brightness(3) hue-rotate(20deg);
 }
+.yellow {
+    filter: hue-rotate(75deg) brightness(4) saturate(100%) contrast(100%);
+}
 
 
 .gtit {
-    box-shadow: 0 -40px 30px -10px rgba(0, 255, 21, 0.6);
+    box-shadow: 0 -40px 30px -10px rgba(0, 255, 21, 0.85);
     background-image: linear-gradient(black, rgba(0, 255, 21, 0.349)); 
 }
 .ptit {
-    box-shadow: 0 -40px 30px -10px rgba(255, 0, 191, 0.6);
+    box-shadow: 0 -40px 30px -10px rgba(255, 0, 191, 0.85);
     background-image: linear-gradient(black, rgba(255, 0, 191, 0.349));
 }
 .btit {
-    box-shadow: 0 -40px 30px -10px rgba(38, 0, 255, 0.6);
+    box-shadow: 0 -40px 30px -10px rgba(38, 0, 255, 0.85);
     background-image: linear-gradient(black, rgba(38, 0, 255, 0.349));
+}
+.ytit {
+    box-shadow: 0 -40px 30px -10px rgba(255, 255, 0, 0.85);
+    background-image: linear-gradient(black, rgba(255, 255, 0, 0.349));
 }
 
 .layers {

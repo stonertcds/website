@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Jersey+10');
 @import url('https://fonts.googleapis.com/css2?family=Workbench&display=swap');
 
+
+
+#my{
+zoom: 60%;
+}
+
+ 
+
 a {
     text-decoration-color: red;
 }
@@ -12,7 +20,7 @@ p {
     line-height: 1.7;
     text-shadow: rgba(0, 0, 0, 0.384) 0px 0px 50px;
     letter-spacing: 0.8px;
-    max-width: 80vw;
+    max-width: 1600px;
     margin: auto;
 }
 .qa {
@@ -38,17 +46,20 @@ p.h { /*h = HEADING*/
     display: block;
     border: 4px solid rgba(255, 0, 0, 0.4);
     margin: 20px auto;
-    width: 60%;
+    width: 1200px;
     font-size: 50px;
     text-shadow: 0px 0px 20px black;
     transition: all 0.3s ease;
     text-align: center;
     font-family: "Jersey 10";
+    font-weight: lighter;
     /*animation: small_auto_drift 10s infinite alternate ease-in-out;*/
 }
 p.h:hover {
     box-shadow: 0 10px 40px rgba(44, 0, 0, 0.5);
     color: rgb(255, 255, 255);
+    
+    letter-spacing: 2px;
 }
 .left {
     text-align: left;
@@ -65,21 +76,41 @@ img {
 }
 video {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 3vh auto;
+    margin: 30px auto;
+    margin-top: 5%;
     display: block;
     padding-top: 150px;
     padding-bottom: 90px;
+    margin-bottom: 3%;
     z-index: -2;
-    width: 60vw;
-    height: 60vh;
-    border-radius: 999px;
-    box-shadow: 0 -40px 30px -10px rgba(255, 0, 0, 0.6);
-    border-top: 10vh;
-    background-image: linear-gradient(black, rgba(255, 0, 0, 0.349));
+
+    width: 1300px;
+    height: 650px;
+    
+    border-radius: 800px;
+    box-shadow: 0 0px 300px -10px rgba(255, 0, 0, 0.588);
+    border-top: 100px;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.24), rgba(48, 0, 0, 0));
 }
+
+.tit {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: auto;
+    display: block;
+    padding-top: 140px;
+    padding-bottom: 0;
+    z-index: -2;
+    width: 650px;
+    height: auto;
+    border-radius: 999px;
+    border-top: 10vh;
+}
+
 body {
-    background-image: linear-gradient(black, rgb(255, 0, 0));
+    background-image: linear-gradient(rgb(116, 0, 0), rgb(255, 0, 0));
     z-index: -4;
+
+    zoom: 0.6;
 }
 span {
     color: rgb(255, 255, 255);
@@ -127,15 +158,22 @@ span {
 }
 
 .bott_auto {
-    transition: transform 2s ease, opacity 1s ease filter 1s ease;
-    opacity: 0.5;
+    transition: all 2s ease;
+    opacity: 0.7;
     margin: auto;
     display: block;
-    block-size: 40%;
+    
     position: relative;
     filter: blur(0px);
     animation: auto_drift 5s infinite alternate ease-in-out;
 }
+.bott_auto:hover {
+    opacity: 1;         
+     
+    transition: all 0.3s ease;     
+}
+
+
 .bott_auto_slow {
     animation: auto_drift_small 7s infinite alternate ease-in-out;
 }
@@ -165,18 +203,7 @@ span {
     }
 }
 
-.tit {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: auto;
-    display: block;
-    padding-top: 140px;
-    padding-bottom: 0;
-    z-index: -2;
-    width: 60vh;
-    height: 60vh;
-    border-radius: 999px;
-    border-top: 10vh;
-}
+
 .social-icons {
     display: flex;
     gap: 4vw;
@@ -186,7 +213,7 @@ span {
 
 .social-icon {
     rotate: 0;
-    width: 14vh;
+    width: 130px;
     height: autopx;
     vertical-align: middle;
     transition: transform 0.5s;
@@ -207,7 +234,8 @@ span {
 }
 .answers:hover {
     opacity: 100%;
-    padding: 1vw;
+    padding: 20px;
+    letter-spacing: 1px;
 }
 .space {
     letter-spacing: 4px;
@@ -240,21 +268,27 @@ audio:hover {
 }
 
 .u-can-scroll {
+    pointer-events: none;
     position: absolute;
     z-index: 9999;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-300%);
     font-family: 'Workbench', sans-serif;
-    font-size: 2vw;
+    font-size: 1.7vw;
     text-align: center;
     color: #ffffff;
     text-shadow: #518282 0px 0px 10px;
-    margin-top: -50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     max-width: 100%;
     opacity: 1;
     animation: fadeOutScroll 10s ease forwards;
 }
 .subject {
-    margin-bottom: 70px;
+    margin-bottom: 0px;
+    margin-top: 500px;
+    width: 400px;
+    height: auto;
+}
+.deratic {
+    margin-bottom: 0px;
 }

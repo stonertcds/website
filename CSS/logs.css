@@ -1,0 +1,59 @@
+.commit-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px 3px;
+  padding: 2px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.commit-item {
+  background: #00000087;
+  border: 4px solid rgba(255, 187, 0, 0.541);
+  color: #807453;
+
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  transition: transform 0.2s ease, background 0.2s ease;
+
+
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+
+  padding: 0px;
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  margin-top: 50px;
+  position: relative;
+  z-index: 1;
+  display: block;
+
+
+
+  transition: all 0.3s ease;
+  text-align: center;
+  font-family: "Jersey 10";
+  font-weight:1;
+}
+
+.commit-item span {
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+}
+span.commit-message {
+  display: block;
+  margin-top: 5px;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+@media (max-width: 700px) {
+  .commit-container {
+    grid-template-columns: 1fr;
+  }
+}
